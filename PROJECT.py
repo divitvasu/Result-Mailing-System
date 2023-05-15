@@ -29,9 +29,9 @@ data_file=easygui.fileopenbox(msg="Select Marksheet file: ")
 
 try:
     b=xlrd.open_workbook(data_file)
-    b1=xlrd.open_workbook('EmailList.xlsx')
+    b1=xlrd.open_workbook('EmailList.xls')
 except FileNotFoundError:
-    print("EmailList.xlsx not found!!")
+    print("EmailList.xls not found!!")
     import PROJECT
 except TypeError as te:
     print("Error: ",te)
@@ -68,7 +68,7 @@ headers=[]
 ######################################
 
 image1=os.path.abspath("logo.jpg")
-image2=os.path.abspath("ganpat-1.jpg")
+image2=os.path.abspath("title.jpg")
 
 
 ######################################
