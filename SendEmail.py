@@ -15,7 +15,7 @@ import easygui
 
 import xlrd
 try:
-    b=xlrd.open_workbook('EmailList.xlsx')
+    b=xlrd.open_workbook('EmailList.xls')
 except OSError as e:
     print(e)
     import SendEmail
